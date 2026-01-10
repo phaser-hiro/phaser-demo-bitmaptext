@@ -45,23 +45,23 @@ export default class Game extends Phaser.Scene {
         const SHIFT_Y = 80;
         const methodlist = [
             {
-                caption: "ビットマップフォント（レトロフォント）",
+                caption: "ビットマップテキスト（レトロフォント）",
                 method: this.displayRetroFont
             },
             {
-                caption: "ビットマップフォント ≪静止≫",
+                caption: "ビットマップテキスト ≪静止≫",
                 method: this.displayBitmapFont
             },
             {
-                caption: "ダイナミックビットマップフォント ≪波の演出≫",
+                caption: "ダイナミックビットマップテキスト ≪波の演出≫",
                 method: this.displayWavingMotion
             },
             {
-                caption: "ダイナミックビットマップフォント ≪拡大と縮小≫",
+                caption: "ダイナミックビットマップテキスト ≪拡大と縮小≫",
                 method: this.displayScalingMotion
             },
             {
-                caption: "ダイナミックビットマップフォント ≪フォローパス≫",
+                caption: "ダイナミックビットマップテキスト ≪フォローパス≫",
                 method: this.displayTextFollowPath
             },
         ];
@@ -98,7 +98,7 @@ export default class Game extends Phaser.Scene {
     }
 
     /**
-     * ビットマップフォント（レトロフォント）
+     * ビットマップテキスト（レトロフォント）
      */
     private displayRetroFont(): void {
         const { width: cW, height: cH } = this.game.canvas;
@@ -123,7 +123,7 @@ export default class Game extends Phaser.Scene {
     }
 
     /**
-     * ビットマップフォント  ≪静止≫
+     * ビットマップテキスト  ≪静止≫
      */
     private displayBitmapFont(): void {
         const { width: cW, height: cH } = this.game.canvas;
@@ -137,7 +137,7 @@ export default class Game extends Phaser.Scene {
     }
 
     /**
-     * ダイナミックビットマップフォント ≪波の演出≫
+     * ダイナミックビットマップテキスト ≪波の演出≫
      */
     private displayWavingMotion(): void {
         type Pos = Phaser.Types.Math.Vector2Like;
@@ -175,7 +175,7 @@ export default class Game extends Phaser.Scene {
     }
 
     /**
-     * ダイナミックビットマップフォント ≪拡大と縮小≫
+     * ダイナミックビットマップテキスト ≪拡大と縮小≫
      */
     private displayScalingMotion(): void {
         type Pos = Phaser.Types.Math.Vector2Like;
@@ -222,7 +222,7 @@ export default class Game extends Phaser.Scene {
     }
 
     /**
-     * ダイナミックビットマップフォント
+     * ダイナミックビットマップテキスト
      * テキストフォローパス
      */
     private displayTextFollowPath() {
